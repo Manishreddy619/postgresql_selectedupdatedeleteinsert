@@ -61,7 +61,9 @@ UPDATE books
 SET cover = 'great' WHERE id = 3;
 SET name = 'manish' WHERE birth_year = '07/06/1956';
 SELECT category FROM books 
-SLECET MIN(date_birth) AS older  from authors
+SELECT MIN(date_birth) AS older  from authors
+SELECT * FROM books where name LIKE ="a%"
+SELECT Count(*) as allBooks FROM (SELECT names from books)
 DELETE FROM authors WHERE country ='usa'
 DELETE FROM authors WHERE category ='drama'
 DELETE FROM authors WHERE country ='usa'
